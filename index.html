@@ -1,50 +1,135 @@
 <!doctype html>
 <html lang="nl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#071515"><meta name="robots" content="noindex,nofollow">
-<meta name="description" content="LeadsBlender — een cinematografische ontwerpstudie in de eigen merkstijl.">
-<title>LeadsBlender — Van aandacht naar echte gesprekken</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07191c"><meta name="robots" content="noindex,nofollow">
+<meta name="description" content="LeadsBlender ontwerpstudie — van AI Studio en Workflow AI tot een funnel met checkout.">
+<title>LeadsBlender — Van idee tot een werkend bedrijf</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/hero.png">
-<style>
-:root{--aqua:#00f5df;--aqua2:#00d6ce;--night:#071515;--ink:#0a1b1b;--white:#f6fbfb;--serif:'Instrument Serif',Georgia,serif;--sans:'Montserrat',Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:var(--white);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--aqua);color:#001918}:focus-visible{outline:2px solid var(--aqua);outline-offset:4px}main{overflow:clip}.visually-hidden{position:absolute;width:1px;height:1px;clip:rect(0,0,0,0);overflow:hidden}
-/* The reference's five-part centered floating navigation, in LeadsBlender's own palette. */
-.nav{position:fixed;z-index:70;top:22px;left:50%;transform:translateX(-50%);width:min(730px,calc(100% - 28px));border-radius:99px;background:rgba(4,21,22,.49);backdrop-filter:blur(22px) saturate(130%);-webkit-backdrop-filter:blur(22px) saturate(130%);border:1px solid rgba(224,255,251,.34);box-shadow:0 9px 50px rgba(0,0,0,.27),inset 0 1px rgba(255,255,255,.24);display:grid;grid-template-columns:1fr 1fr 1.6fr 1fr 1fr;align-items:center;justify-items:center;gap:8px;min-height:68px;padding:6px 20px}
-.nav>a:not(.nav__logo){font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.83);padding:12px 2px;white-space:nowrap;transition:color .25s}.nav>a:hover{color:var(--aqua)}.nav__logo{display:flex;align-items:baseline;justify-content:center;min-width:0;letter-spacing:-.04em;white-space:nowrap}.nav__logo .brandlead{color:var(--aqua);font-size:16px;font-weight:800}.nav__logo .brandblend{color:#f6fbfb;font-size:14px;font-weight:500;letter-spacing:-.065em}.concept{position:fixed;z-index:75;right:16px;bottom:15px;border:1px solid rgba(255,255,255,.26);background:rgba(0,15,16,.74);backdrop-filter:blur(12px);color:#bce5df;padding:8px 12px;border-radius:99px;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;pointer-events:none}
-/* Cinematic title scene */
-.scene{position:relative;min-height:100svh;isolation:isolate;overflow:hidden}.scene__image,.scene__shade{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.scene__image{z-index:-3}.hero .scene__image{object-position:center center;animation:slowPush 19s ease-in-out infinite alternate}.scene__shade{z-index:-2;background:linear-gradient(180deg,rgba(1,13,15,.5) 0%,rgba(2,16,18,.12) 35%,rgba(1,14,15,.17) 61%,rgba(2,14,16,.74) 100%),radial-gradient(ellipse 55% 52% at 50% 49%,rgba(0,8,12,.4),transparent 78%)}@keyframes slowPush{to{transform:scale(1.07) translateY(-1%)}}
-.hero__content{min-height:100svh;padding:155px 20px 165px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.eyebrow{font-size:11px;letter-spacing:.39em;font-weight:700;text-transform:uppercase;color:#e5f9f7}.eyebrow span{display:block;margin-top:9px;font-size:10px;font-weight:500;color:var(--aqua);letter-spacing:.32em}.hero h1{margin:20px 0 0;font-weight:400;line-height:.87;text-transform:uppercase;text-shadow:0 3px 24px rgba(0,0,0,.35)}.hero h1 span{display:block}.hero h1 .serif{font-family:var(--serif);font-size:clamp(4.4rem,10.9vw,10.8rem);letter-spacing:.025em}.hero h1 .sans{font-family:var(--sans);font-size:clamp(2.35rem,6.1vw,6.6rem);font-weight:700;letter-spacing:-.07em;white-space:nowrap}.hero h1 .sans i{font-style:normal;color:var(--aqua)}.hero__intro{max-width:530px;margin:26px auto 0;font-family:var(--serif);font-size:clamp(1.27rem,2vw,1.72rem);line-height:1.35;color:#eff8f7;text-shadow:0 2px 12px #031717}.hero__caption{position:absolute;bottom:38px;left:clamp(22px,5vw,80px);font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.8)}.hero__caption:before{content:'';display:inline-block;width:32px;height:1px;background:var(--aqua);vertical-align:middle;margin-right:11px}
-@keyframes heroUp{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}.heroUp{animation:heroUp .95s var(--ease) both}.heroUp:nth-of-type(2){animation-delay:.15s}.heroUp:nth-of-type(3){animation-delay:.3s}.heroUp:nth-of-type(4){animation-delay:.45s}
-.pill{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 36px;margin-top:36px;border-radius:100px;text-align:center;text-transform:uppercase;font-size:10px;font-weight:700;letter-spacing:.2em;transition:transform .3s,background .3s,border-color .3s,color .3s;cursor:pointer}.pill:hover{transform:translateY(-3px)}.pill:active{transform:translateY(0)}.pill--glass{background:rgba(0,40,42,.28);border:1px solid rgba(235,255,253,.67);box-shadow:inset 0 1px rgba(255,255,255,.26),0 14px 40px #0006;backdrop-filter:blur(8px)}.pill--glass:hover{background:rgba(0,245,223,.2);border-color:var(--aqua)}.pill--line{background:transparent;border:1px solid rgba(255,255,255,.65)}.pill--line:hover{background:rgba(0,245,223,.14);border-color:var(--aqua)}
-/* Layered aqua mist, physically overlapping sections instead of separate bands. */
-.mist{height:clamp(135px,23vw,340px);margin-top:clamp(-168px,-13vw,-110px);position:relative;z-index:4;pointer-events:none;background:radial-gradient(ellipse 40% 36% at 7% 73%,rgba(148,252,242,.42),transparent 95%),radial-gradient(ellipse 44% 31% at 33% 76%,rgba(123,234,230,.39),transparent 96%),radial-gradient(ellipse 45% 29% at 74% 68%,rgba(145,255,247,.4),transparent 92%),radial-gradient(ellipse 25% 43% at 103% 79%,rgba(169,250,245,.47),transparent 95%),linear-gradient(transparent 4%,rgba(18,105,106,.1) 50%,var(--night) 100%);filter:blur(17px)}
-.showcase{margin-top:clamp(-100px,-7vw,-55px);min-height:100svh}.showcase .scene__image{object-position:center}.showcase .scene__shade{background:linear-gradient(90deg,rgba(0,11,13,.72),rgba(0,20,22,.15) 75%),linear-gradient(0deg,var(--night),transparent 27%,transparent 70%,rgba(3,20,21,.25))}.showcase__inner{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 22px 170px}.small-label{font-weight:600;text-transform:uppercase;letter-spacing:.32em;font-size:10px;color:var(--aqua)}.showcase h2{font-family:var(--serif);font-weight:400;font-size:clamp(4.5rem,9vw,9.3rem);line-height:.85;letter-spacing:-.025em;margin:19px 0}.showcase__copy{font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,3.1rem);line-height:1.14;max-width:680px;margin:12px auto 0;text-wrap:balance}.showcase__copy em{font-weight:400;color:var(--aqua);font-style:italic}.showcase__side{position:absolute;bottom:56px;right:clamp(18px,4vw,70px);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#cbe6e2}
-/* Six-part editorial Q&A as the reference's staggered two-column story. */
-.qa{position:relative;min-height:870px;padding:130px 20px 240px;background:var(--night)}.qa:after{content:'';position:absolute;inset:auto 0 0;height:210px;background:radial-gradient(ellipse at 25% 100%,rgba(0,245,223,.15),transparent 58%),linear-gradient(transparent,var(--night));pointer-events:none}.qa__head{text-align:center}.qa__head .small-label{display:block}.qa h2{font-family:var(--serif);font-size:clamp(4rem,7vw,7rem);font-weight:400;letter-spacing:-.025em;margin:9px 0 82px}.qa h2 em{font-size:.68em;color:var(--aqua);font-weight:400}.qa__grid{width:min(965px,100%);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:clamp(46px,9vw,136px)}.qa__column{display:flex;flex-direction:column;gap:61px}.qa__column:last-child{padding-top:90px}.qa article{border-top:1px solid rgba(255,255,255,.19);padding-top:19px}.qa article .num{font-size:10px;letter-spacing:.22em;color:var(--aqua);font-weight:700}.qa h3{font-family:var(--serif);font-size:clamp(1.35rem,2vw,1.7rem);line-height:1.15;font-weight:400;margin:15px 0 12px}.qa article p{font-size:12px;line-height:1.85;color:#a9c4c2;max-width:41ch;margin:0;font-weight:400}.qa__aside{position:absolute;bottom:150px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:9px;letter-spacing:.29em;color:#80aaa5;text-transform:uppercase}
-.fogline{position:relative;z-index:2;margin-top:-140px;height:175px;pointer-events:none;background:radial-gradient(ellipse 60% 46% at 20% 65%,rgba(52,198,192,.2),transparent 98%),radial-gradient(ellipse 58% 45% at 85% 76%,rgba(48,195,185,.18),transparent 98%);filter:blur(21px)}
-.finale{min-height:92svh;margin-top:-90px}.finale .scene__image{object-position:center}.finale .scene__shade{background:linear-gradient(180deg,rgba(0,14,17,.18),rgba(0,15,17,.25) 50%,rgba(0,12,13,.86) 100%),linear-gradient(90deg,rgba(0,12,13,.3),transparent 70%)}.finale__inner{min-height:92svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:130px 20px 150px}.finale h2{font-family:var(--serif);font-size:clamp(2.4rem,5.2vw,5.8rem);font-weight:400;line-height:1.03;max-width:810px;margin:20px 0 0;text-wrap:balance}.finale h2 em{color:var(--aqua);font-weight:400}.finale p{font-size:13px;line-height:1.7;color:#d0e9e7;max-width:490px;margin:25px 0 0}.finale .pill{margin-top:30px}
-.footer{position:relative;background:#051111;border-top:1px solid #164441;padding:25px clamp(20px,4vw,70px) 35px;display:flex;justify-content:space-between;align-items:center;gap:20px;color:#8ba9a6;font-size:10px;letter-spacing:.08em}.footer strong{font-weight:700;color:#d7eeeb}.footer a:hover{color:var(--aqua)}.footer__links{display:flex;gap:24px;flex-wrap:wrap}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.reveal.is-visible{opacity:1;transform:none}
-@media(max-width:700px){.nav{top:12px;grid-template-columns:1fr 1fr 1.5fr 1fr 1fr;padding:4px 10px;min-height:58px;gap:4px}.nav>a:not(.nav__logo){font-size:8px;letter-spacing:.04em;padding:12px 0}.nav__logo .brandlead{font-size:11px}.nav__logo .brandblend{font-size:10px}.hero__content{padding:125px 19px 125px}.hero h1 .serif{font-size:clamp(4.1rem,16vw,6.6rem)}.hero h1 .sans{font-size:clamp(2rem,8vw,3.9rem)}.hero__intro{font-size:1.25rem;max-width:340px}.hero__caption{bottom:24px}.showcase .scene__image{object-position:65%}.showcase__inner{padding:120px 18px 145px}.showcase h2{font-size:clamp(4rem,14vw,6rem)}.showcase__copy{max-width:390px}.qa{padding:95px 25px 205px}.qa h2{margin-bottom:55px}.qa__grid{grid-template-columns:1fr;gap:39px}.qa__column{gap:39px}.qa__column:last-child{padding-top:0}.qa article p{font-size:13px}.qa__aside{bottom:95px}.finale .scene__image{object-position:63%}.finale__inner{padding:100px 20px 130px}.footer{align-items:flex-start;flex-direction:column;padding-bottom:66px}.concept{right:12px;bottom:10px}}
-@media(max-width:390px){.nav{width:calc(100% - 16px)}.nav>a:not(.nav__logo){font-size:7px}.nav__logo .brandlead{font-size:10px}.nav__logo .brandblend{font-size:9px}.hero h1 .sans{font-size:7.8vw}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero .scene__image,.heroUp{animation:none}.reveal{opacity:1;transform:none;transition:none}.pill{transition:none}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/v3/hero.webp"><link rel="stylesheet" href="v3.css">
+<script defer src="v3.js"></script>
 </head>
 <body>
-<nav class="nav" aria-label="Hoofdnavigatie"><a href="#concept">Concept</a><a href="#verhaal">Verhaal</a><a class="nav__logo" href="#top" aria-label="LeadsBlender, terug naar boven"><span class="brandlead">LEADS</span><span class="brandblend">BLENDER</span></a><a href="#vragen">Vragen</a><a href="#start">Start</a></nav>
-<span class="concept">Ontwerpstudie · geen live site</span>
-<main id="top">
-<section class="scene hero" aria-labelledby="hero-title"><img class="scene__image" src="assets/hero.png" alt="Oprichter kijkt vanuit een donkere studio uit over een stad met turquoise licht"><div class="scene__shade"></div><div class="hero__content"><p class="eyebrow heroUp">LeadsBlender<span>Jouw ideeën. In beweging.</span></p><h1 id="hero-title" class="heroUp"><span class="serif">VAN AANDACHT</span><span class="sans">NAAR <i>CONNECTIE.</i></span></h1><p class="hero__intro heroUp">Er is meer mogelijk wanneer je marketing, gesprekken en opvolging samenbrengt op één plek.</p><a class="pill pill--glass heroUp" href="#concept">Ontdek het verhaal</a></div><div class="hero__caption">01 / Een nieuw perspectief</div></section>
-<div class="mist" aria-hidden="true"></div>
-<section class="scene showcase" id="concept" aria-labelledby="showcase-title"><img class="scene__image" src="assets/showcase.png" loading="lazy" alt="Team bespreekt ideeën in een donkere studio met aqua licht"><div class="scene__shade"></div><div class="showcase__inner" id="verhaal"><span class="small-label reveal">Van eerste klik naar vervolg</span><h2 id="showcase-title" class="reveal">Blijf in beeld.</h2><p class="showcase__copy reveal">Niet alleen wanneer iemand kijkt.<br>Juist wanneer een <em>gesprek begint.</em></p><a class="pill pill--line reveal" href="#vragen">Leer LeadsBlender kennen</a></div><div class="showcase__side">02 / Alles komt samen</div></section>
-<section class="qa" id="vragen" aria-labelledby="qa-title"><header class="qa__head reveal"><span class="small-label">LeadsBlender uitgelegd</span><h2 id="qa-title">Q <em>&amp;</em> A</h2></header><div class="qa__grid"><div class="qa__column"><article class="reveal"><span class="num">01 /</span><h3>Wat is LeadsBlender?</h3><p>Een plek om contactmomenten, gesprekken en opvolging te organiseren. Zodat een nieuwe aanvraag niet losraakt van wat daarna moet gebeuren.</p></article><article class="reveal"><span class="num">02 /</span><h3>Waarom alles op één plek?</h3><p>Wanneer je kanalen en klantinformatie verspreid staan, wordt opvolgen lastiger. LeadsBlender brengt het werk samen in één overzicht.</p></article><article class="reveal"><span class="num">03 /</span><h3>Wat gebeurt er na een nieuwe lead?</h3><p>Je ziet waar iemand vandaan komt, houdt het gesprek bij en bepaalt de volgende stap in je workflow.</p></article></div><div class="qa__column"><article class="reveal"><span class="num">04 /</span><h3>Is dit alleen een CRM?</h3><p>Het CRM is het vertrekpunt. Je kunt daarnaast funnels, gesprekken en automatische opvolging inzetten binnen dezelfde omgeving.</p></article><article class="reveal"><span class="num">05 /</span><h3>Kan ik klein beginnen?</h3><p>Ja. Start bij één proces dat nu tijd of aandacht kost, en bouw daarna verder. De proefperiode geeft ruimte om de werkwijze te verkennen.</p></article><article class="reveal"><span class="num">06 /</span><h3>Hoe zie ik of het bij ons past?</h3><p>Bekijk de proefperiode en loop je belangrijkste klantreis door: van eerste contact tot een helder vervolgmoment.</p></article></div></div><p class="qa__aside">Minder losse eindjes. Meer ruimte om te groeien.</p></section>
-<div class="fogline" aria-hidden="true"></div>
-<section class="scene finale" id="start" aria-labelledby="finale-title"><img class="scene__image" src="assets/finale.png" loading="lazy" alt="Stad bij zonsopkomst, met een silhouet in turquoise ochtendmist"><div class="scene__shade"></div><div class="finale__inner"><span class="small-label reveal">De volgende stap is aan jou</span><h2 class="reveal" id="finale-title">Van een eerste signaal<br>naar een <em>echt gesprek.</em></h2><p class="reveal">Ontdek hoe LeadsBlender je helpt overzicht te houden, op te volgen en momentum vast te houden.</p><a class="pill pill--glass reveal" href="https://trial.leadsblender.com/checkout" target="_blank" rel="noopener noreferrer">Bekijk de proefperiode ↗</a></div></section>
+<a class="skip" href="#main">Naar inhoud</a>
+<nav class="nav glass" aria-label="Hoofdnavigatie">
+  <a href="#ai-studio">AI Studio</a><a href="#workflow-ai">Workflow AI</a>
+  <a href="#top" class="nav__brand" aria-label="LeadsBlender — naar boven"><b>LEADS</b><span>BLENDER</span></a>
+  <a href="#integraties">Integraties</a><a href="#verkoop">Verkopen</a>
+</nav>
+<div class="concept-stamp" aria-label="Ontwerpstudie, geen live productsite">CONCEPT / 2026</div>
+<main id="main">
+  <section class="scene hero" id="top" aria-labelledby="hero-title">
+    <img class="scene__image" src="assets/v3/hero.webp" alt="Schilderachtige donkerblauwe wolken openen rond een turquoise horizon" fetchpriority="high">
+    <div class="scene__shade"></div><div class="scene__mist scene__mist--left" aria-hidden="true"></div><div class="scene__mist scene__mist--right" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="eyebrow hero-enter">LEADSBLENDER <span> / </span> CREATE · AUTOMATE · SELL</p>
+      <h1 id="hero-title" class="hero-enter"><span class="display-serif">VAN IDEE</span><span class="display-sans">NAAR <em>BUSINESS.</em></span></h1>
+      <p class="hero__intro hero-enter">Bouw met AI Studio. Automatiseer met Workflow AI. <br>Verkoop via een funnel en checkout. Eén verbonden klantreis.</p>
+      <a class="pill glass hero-enter" href="#ai-studio">Ontdek de mogelijkheden <span aria-hidden="true">↗</span></a>
+    </div>
+    <span class="scene__index">01 / DE NIEUWE WERKWIJZE</span><a class="scene__scroll" href="#ai-studio">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+  </section>
+  <div class="cloud-transition cloud-transition--hero" aria-hidden="true"><img src="assets/v3/cloudbank.webp" alt=""></div>
+
+  <section class="scene studio" id="ai-studio" aria-labelledby="studio-title">
+    <img class="scene__image" src="assets/v3/studio.webp" loading="lazy" alt="Lichtgevende doorgang boven een zee van wolken"><div class="scene__shade"></div>
+    <div class="studio__content wrap">
+      <p class="eyebrow reveal">HET BEGIN / DE BOUWPLAATS</p>
+      <h2 id="studio-title" class="reveal"><span class="display-serif">AI</span> <span class="display-sans">STUDIO.</span></h2>
+      <p class="studio__statement reveal">Van een beschrijving<br>naar een <em>ervaring die werkt.</em></p>
+      <p class="studio__detail reveal">Maak websites, landingspagina’s, formulieren, boekingsflows en interactieve projecten met prompts. Verfijn visueel of in code. Publiceer op je domein.</p>
+      <a class="pill pill--outline reveal" href="#bouwproces">Zie wat je kunt bouwen <span aria-hidden="true">↓</span></a>
+    </div>
+    <span class="scene__index">02 / AI STUDIO</span>
+  </section>
+  <div class="cloud-transition cloud-transition--studio" aria-hidden="true"><img src="assets/v3/cloudbank.webp" alt=""></div>
+
+  <section class="editorial editorial--build" id="bouwproces" aria-labelledby="build-title">
+    <div class="wrap">
+      <div class="editorial__head reveal"><p class="eyebrow">AI STUDIO / MEER DAN EEN TEMPLATE</p><h2 id="build-title">Een idee verdient<br><em>een werkende vorm.</em></h2></div>
+      <div class="build-grid">
+        <div class="build-grid__opening reveal"><p class="mini-label">01 — BEGIN</p><p class="build-grid__quote">“Maak een landingspagina voor mijn aanbod, verbind het formulier met mijn CRM en laat bezoekers een afspraak boeken.”</p><span class="build-grid__note">VOORBEELDPROMPT · CONCEPTUELE VISUALISATIE</span></div>
+        <div class="build-grid__list">
+          <article class="reveal"><span>01</span><div><h3>Beschrijf het.</h3><p>Start met tekst, een template, een URL of je eigen beeld als referentie.</p></div></article>
+          <article class="reveal"><span>02</span><div><h3>Maak het eigen.</h3><p>Pas de ervaring aan via prompts, visuele bewerking en de ingebouwde code-editor.</p></div></article>
+          <article class="reveal"><span>03</span><div><h3>Laat het werken.</h3><p>Verbind ondersteunde formulieren en agenda’s; test, publiceer en koppel een domein.</p></div></article>
+        </div>
+      </div>
+      <p class="editorial__foot reveal">WEBSITE <span>✳</span> LANDING PAGE <span>✳</span> FORMULIER <span>✳</span> BOOKING <span>✳</span> WEB-ERVARING</p>
+    </div>
+  </section>
+
+  <section class="scene workflow" id="workflow-ai" aria-labelledby="workflow-title">
+    <img class="scene__image" src="assets/v3/workflows.webp" loading="lazy" alt="Lichtstromen verbinden geschilderde wolkeilanden boven een stad"><div class="scene__shade"></div>
+    <div class="workflow__content">
+      <p class="eyebrow reveal">VAN EEN ACTIE NAAR EEN SYSTEEM</p>
+      <h2 id="workflow-title" class="reveal"><span class="display-serif">WORKFLOW</span><span class="display-sans">AI.</span></h2>
+      <p class="workflow__copy reveal">Beschrijf het proces. Laat AI triggers en acties opbouwen. Controleer en verfijn elke stap voor je live gaat.</p>
+      <a href="#integraties" class="pill glass reveal">Van workflow naar agent <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="journey reveal" aria-label="Voorbeeld van een klantreis"><span>01 / Lead komt binnen</span><i></i><span>02 / AI kwalificeert</span><i></i><span>03 / Team volgt op</span><i></i><span>04 / Klant koopt</span></div>
+    <span class="scene__index">03 / WORKFLOW AI</span>
+  </section>
+
+  <section class="editorial integrations" id="integraties" aria-labelledby="integration-title">
+    <div class="wrap">
+      <div class="editorial__head editorial__head--center reveal"><p class="eyebrow">MEER DENKKRACHT, VERBONDEN MET JE WERK</p><h2 id="integration-title">De modellen die jij kiest.<br><em>De processen die jij bepaalt.</em></h2></div>
+      <div class="model-grid">
+        <article class="model model--claude reveal"><p class="mini-label">01 / VERBIND JE ASSISTENT</p><h3>Claude<span class="model__spark">✳</span></h3><p>HighLevel’s MCP-koppeling geeft Claude toegang tot geautoriseerde CRM-gegevens en ondersteunde acties. Vraag, onderzoek en werk vanuit een gesprek — met de toegestane rechten van je account.</p><span class="model__route">CLAUDE ↔ HIGHLEVEL MCP ↔ CRM</span></article>
+        <article class="model model--openai reveal"><p class="mini-label">02 / KIES JE MODEL IN DE WORKFLOW</p><h3>OpenAI<span class="model__spark">↗</span></h3><p>In de AI Agent-stap van Workflows kun je een model selecteren, waaronder modellen van OpenAI en Anthropic. Combineer instructies en toegestane tools voor geautomatiseerde taken.</p><span class="model__route">WORKFLOW ↔ AI AGENT ↔ GEKOZEN MODEL</span></article>
+      </div>
+      <p class="integration-note reveal">Twee verschillende routes: Claude kan via MCP met HighLevel werken; de AI Agent-actie kiest een model binnen een workflow. Koppelingen, rechten en kosten hangen af van je configuratie.</p>
+    </div>
+  </section>
+
+  <section class="editorial constellation" id="ai-landschap" aria-labelledby="landscape-title">
+    <div class="wrap">
+      <div class="constellation__intro reveal"><p class="eyebrow">HET VOLLEDIGE AI-LANDSCHAP</p><h2 id="landscape-title">Niet één trucje.<br><em>Een hele gereedschapskist.</em></h2><p>AI Studio staat vooraan. De rest van het HighLevel-ecosysteem helpt je antwoorden, creëren, spreken, beslissen en opvolgen. Kies wat bij je proces past.</p></div>
+      <div class="constellation__list" role="list">
+        <div class="constellation__row reveal" role="listitem"><span>01</span><strong>Ask AI</strong><p>Je assistent binnen het platform voor vragen, inhoud en ondersteunde acties.</p></div>
+        <div class="constellation__row reveal" role="listitem"><span>02</span><strong>Conversation AI</strong><p>Gesprekken met leads via ondersteunde kanalen; antwoorden, kwalificeren, boeken.</p></div>
+        <div class="constellation__row reveal" role="listitem"><span>03</span><strong>Voice AI</strong><p>AI-gesprekken via telefonie en ondersteunde voice-ervaringen.</p></div>
+        <div class="constellation__row reveal" role="listitem"><span>04</span><strong>Managed Agents &amp; Agent Studio</strong><p>Autonome taken en visueel beheer van flow-gebaseerde agents; iets anders dan AI Studio.</p></div>
+        <div class="constellation__row reveal" role="listitem"><span>05</span><strong>Content &amp; Email AI</strong><p>Beeld, tekst en e-mailconcepten voor je communicatie.</p></div>
+        <div class="constellation__row reveal" role="listitem"><span>06</span><strong>Reviews AI &amp; Knowledge Base</strong><p>Beoordeel reacties op reviews en werk met goedgekeurde bedrijfskennis.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene selling" id="verkoop" aria-labelledby="selling-title">
+    <img class="scene__image" src="assets/v3/sell.webp" loading="lazy" alt="Schilderachtige bogen leiden door een wolkenlandschap naar een lichte horizon"><div class="scene__shade"></div>
+    <div class="selling__content wrap">
+      <p class="eyebrow reveal">VAN ERVARING NAAR TRANSACTIE</p>
+      <h2 id="selling-title" class="reveal"><span class="display-serif">SHOW IT.</span><span class="display-sans">SELL IT.</span></h2>
+      <p class="selling__copy reveal">Een funnel brengt je verhaal samen. Een checkout maakt kopen mogelijk. Daarna begint de opvolging — niet het einde van de relatie.</p>
+      <div class="selling__routes reveal"><div><span>ROUTE A</span><strong>AI Studio + Payments</strong><p>Bouw de ervaring in AI Studio en voeg producten en een door HighLevel beheerde checkout toe.</p></div><div><span>ROUTE B</span><strong>Funnels + Order Form</strong><p>Bouw in de klassieke funnelbouwer en voeg een eenstaps- of tweestapsbestelformulier toe.</p></div></div>
+      <p class="selling__note reveal">Beide routes vragen een geconfigureerd product en een betaalprovider. Beschikbaarheid en beperkingen verschillen per route.</p>
+    </div>
+    <div class="selling__path reveal" aria-label="Voorbeeld van een verkooppad"><span>LANDING PAGE</span><b>→</b><span>AANBOD</span><b>→</b><span>CHECKOUT</span><b>→</b><span>ORDER</span><b>→</b><span>FOLLOW-UP</span></div>
+    <span class="scene__index">04 / VERKOOP MET EEN KLANTREIS</span>
+  </section>
+
+  <section class="editorial qa" id="vragen" aria-labelledby="qa-title"><div class="wrap">
+    <header class="qa__intro reveal"><p class="eyebrow">WAT IS WAT?</p><h2 id="qa-title">Q <em>&amp;</em> A</h2><p>Geen losse AI-beloften. Dit is hoe de onderdelen zich tot elkaar verhouden.</p></header>
+    <div class="qa__columns"><div class="qa__col">
+      <article class="reveal"><h3>Wat maakt AI Studio precies?</h3><p>Websites, landingspagina’s, formulieren, boekingsflows en interactieve webprojecten vanuit prompts en referenties. Je kunt bewerken, testen en publiceren.</p></article>
+      <article class="reveal"><h3>Is AI Studio hetzelfde als Agent Studio?</h3><p>Nee. AI Studio bouwt web-ervaringen. Agent Studio is voor het beheren en testen van bestaande flow-gebaseerde AI-agents.</p></article>
+      <article class="reveal"><h3>Kan ik in AI Studio direct verkopen?</h3><p>Ja, via Payments met producten uit je HighLevel-catalogus en de aangesloten betaalprovider. Niet elk projecttype of betaalmiddel wordt ondersteund.</p></article>
+    </div><div class="qa__col">
+      <article class="reveal"><h3>Kan AI mijn hele workflow maken?</h3><p>Workflow AI Builder kan triggers en acties uit een beschrijving opbouwen en met accountgegevens configureren. Jij controleert, test en verfijnt de automatisering.</p></article>
+      <article class="reveal"><h3>Waar passen Claude en OpenAI?</h3><p>Claude kan via een geautoriseerde HighLevel-MCP-verbinding met het CRM werken. In de AI Agent-actie van Workflows kies je daarnaast uit ondersteunde modelproviders, waaronder OpenAI en Anthropic.</p></article>
+      <article class="reveal"><h3>En hoe verkoop ik met een funnel?</h3><p>Gebruik de funnelbouwer met een order form, of een AI Studio-project met Payments. Koppel je product, test de checkout en laat een workflow op de order reageren.</p></article>
+    </div></div>
+  </div></section>
+
+  <section class="scene closing" id="start" aria-labelledby="closing-title">
+    <img class="scene__image" src="assets/v3/finale.webp" loading="lazy" alt="Een open hemel met heldere wolken, aangelicht in turquoise"><div class="scene__shade"></div>
+    <div class="closing__content"><p class="eyebrow reveal">LEADSBLENDER / CREATE · AUTOMATE · SELL</p><h2 class="reveal" id="closing-title">Een idee is het begin.<br><em>Maak het een systeem dat werkt.</em></h2><p class="reveal">Bouw, verbind en verkoop met de tools die bij jouw bedrijf passen.</p><a class="pill glass reveal" href="https://trial.leadsblender.com/" target="_blank" rel="noopener noreferrer">Bekijk de proefperiode <span aria-hidden="true">↗</span></a></div>
+  </section>
 </main>
-<footer class="footer"><strong>LeadsBlender — ideeën in beweging.</strong><div class="footer__links"><a href="https://trial.leadsblender.com" target="_blank" rel="noopener noreferrer">Huidige website ↗</a><a href="mailto:hallo@leadsblender.com">Contact</a><span>Concept / niet voor publicatie</span></div></footer>
-<script>if('IntersectionObserver'in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}})},{threshold:.12,rootMargin:'0px 0px -35px 0px'});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el))}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('is-visible'));</script>
+<footer class="footer"><div class="footer__top"><strong>LEADS<span>BLENDER</span></strong><p>AI Studio · Workflow AI · Integraties · Funnels &amp; checkout</p><a href="https://trial.leadsblender.com/" target="_blank" rel="noopener noreferrer">BEZOEK LEADSBLENDER ↗</a></div>
+  <div class="footer__bottom"><p>Ontwerpstudie. Deze pagina demonstreert productmogelijkheden; het is geen live AI Studio- of checkout-implementatie. Features, rechten en gebruikskosten hangen af van je HighLevel-configuratie.</p><details><summary>Productbronnen</summary><div class="footer__sources"><a target="_blank" rel="noopener noreferrer" href="https://help.gohighlevel.com/support/solutions/articles/155000007587-ai-studio-in-highlevel">AI Studio</a><a target="_blank" rel="noopener noreferrer" href="https://help.gohighlevel.com/support/solutions/articles/155000009049-accept-payments-in-ai-studio">Payments in AI Studio</a><a target="_blank" rel="noopener noreferrer" href="https://help.gohighlevel.com/support/solutions/articles/155000006100-workflow-ai-builder">Workflow AI Builder</a><a target="_blank" rel="noopener noreferrer" href="https://help.gohighlevel.com/support/solutions/articles/155000007600-workflow-action-ai-agent">AI Agent Action</a><a target="_blank" rel="noopener noreferrer" href="https://help.gohighlevel.com/support/solutions/articles/155000008360-highlevel-mcp-multi-account-support-for-claude">Claude via MCP</a><a target="_blank" rel="noopener noreferrer" href="https://help.gohighlevel.com/support/solutions/articles/155000002166-ai-tools-in-highlevel">AI Tools</a><a target="_blank" rel="noopener noreferrer" href="https://help.gohighlevel.com/support/solutions/articles/155000007238">Funnel Order Form</a></div></details></div>
+</footer>
 </body>
 </html>
