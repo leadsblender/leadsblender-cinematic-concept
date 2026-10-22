@@ -9,4 +9,4 @@ Generated through the authenticated Higgsfield MCP connector with GPT Image 2.5,
 - Prepared asset: cropped to its alpha silhouette with a soft border; 680 × 1400 transparent WebP, quality 90.
 - Content: polished chrome base, clear glass pitcher and handle, luminous aqua fluid vortex, no text or product logo.
 
-The illustration is composited over the unchanged original scene artwork in HTML. The floating/scroll-responsive movement is a CSS/JavaScript treatment of the still illustration, not a live 3D model or generated video. None of the real product screenshots were generated or altered to match this illustration.
+The illustration is composited over the original scene art and its atmospheric video derivative. It is stationary in normal document flow: no floating, pointer parallax or scroll-linked transforms. The illustration is not a live 3D model or generated product video. None of the real product screenshots were generated or altered to match this illustration.

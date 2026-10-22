@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/v3/hero.webp"><link rel="preload" as="image" href="assets/brand/blender.webp">
-<link rel="stylesheet" href="v3.css?v=motion-2"><link rel="stylesheet" href="product.css?v=motion-2"><link rel="stylesheet" href="motion.css?v=motion-2"><link rel="stylesheet" href="editorial-v5.css?v=motion-2">
-<script defer src="v3.js?v=motion-2"></script><script defer src="motion.js?v=motion-2"></script>
+<link rel="stylesheet" href="v3.css?v=reference-1"><link rel="stylesheet" href="product.css?v=reference-1"><link rel="stylesheet" href="motion.css?v=reference-1"><link rel="stylesheet" href="editorial-v5.css?v=reference-1">
+<script defer src="v3.js?v=reference-1"></script><script defer src="motion.js?v=reference-1"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -25,6 +25,7 @@
 <main id="main">
   <section class="scene hero" id="top" aria-labelledby="hero-title">
     <img class="scene__image" src="assets/v3/hero.webp" alt="Painterly midnight clouds open around a turquoise horizon" fetchpriority="high">
+    <video class="scene__video" data-src="assets/motion/hero-loop.mp4" poster="assets/v3/hero.webp" autoplay muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
     <div class="scene__shade"></div>
     <div class="hero__layout wrap">
       <div class="hero__content">
@@ -47,7 +48,8 @@
 
   <section class="scene studio" id="ai-studio" aria-labelledby="studio-title">
     <img class="scene__image" src="assets/v3/studio.webp" loading="lazy" alt="A luminous doorway suspended above a sea of clouds"><div class="scene__shade"></div>
-    <div class="studio__content wrap">
+    <div class="chapter-layout wrap">
+    <div class="studio__content">
       <p class="eyebrow reveal">EVERY BUSINESS STARTS WITH AN IDEA</p>
       <h2 id="studio-title" class="reveal"><span class="display-serif">AI</span> <span class="display-sans">STUDIO.</span></h2>
       <p class="studio__statement reveal">From a description<br>to an <em>experience that works.</em></p>
@@ -55,6 +57,7 @@
       <a class="pill pill--outline reveal" href="#build-process">Step inside AI Studio <span aria-hidden="true">↓</span></a>
     </div>
     <a class="scene-product scene-product--studio" href="#build-process" aria-label="Inspect the real AI Studio workspace below"><div class="scene-product__bar"><span class="scene-product__light" aria-hidden="true"></span><span>AI STUDIO / THE REAL WORKSPACE</span><span aria-hidden="true">↗</span></div><img src="assets/product/studio.webp" width="1224" height="690" loading="lazy" alt=""><span class="scene-product__caption">Your next idea starts here. <span>SCROLL TO INSPECT ↓</span></span></a>
+    </div>
     <span class="scene__index">02 / AI STUDIO</span>
   </section>
 
@@ -81,6 +84,7 @@
 
   <section class="scene workflow" id="workflow-ai" aria-labelledby="workflow-title">
     <img class="scene__image" src="assets/v3/workflows.webp" loading="lazy" alt="Aqua light trails connect painterly cloud islands above a distant city"><div class="scene__shade"></div>
+    <div class="chapter-layout wrap">
     <div class="workflow__content">
       <p class="eyebrow reveal">FROM A SINGLE ACTION TO A CONNECTED SYSTEM</p>
       <h2 id="workflow-title" class="reveal"><span class="display-serif">WORKFLOW</span><span class="display-sans">AI.</span></h2>
@@ -89,6 +93,7 @@
     </div>
     <a class="scene-product scene-product--workflow" href="#workspace" aria-label="Inspect the real conversion workflow canvas below"><div class="scene-product__bar"><span class="scene-product__light" aria-hidden="true"></span><span>THE WORKFLOW CANVAS / EXISTING EXAMPLE</span><span aria-hidden="true">↗</span></div><img src="assets/product/workflow.webp" width="1456" height="830" loading="lazy" alt=""><span class="scene-product__caption">See the steps connect. <span>EXPLORE THE WORKSPACE ↓</span></span></a>
     <div class="journey reveal" aria-label="Example customer journey"><span>01 / Lead arrives</span><i></i><span>02 / AI qualifies</span><i></i><span>03 / Team follows up</span><i></i><span>04 / Customer buys</span></div>
+    </div>
     <span class="scene__index">03 / WORKFLOW AI</span>
   </section>
 
